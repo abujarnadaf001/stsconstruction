@@ -1,0 +1,261 @@
+<!-- SmartTechServices Inspection & Quality Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inspection & Quality - Smart Tech Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #2563eb;
+      --secondary-color: #1e40af;
+      --text-color: #1f2937;
+      --light-color: #f9fafb;
+      --accent-color: #ecc515;
+      --transition: all 0.3s ease;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--text-color);
+      background: #fff;
+    }
+
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; padding: 0; }
+
+    .navbar {
+      background: #fff;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .logo-img {
+      width: 150px;
+      height: auto;
+    }
+
+    .nav-menu { display: flex; gap: 2rem; align-items: center; }
+    .nav-link:hover { color: var(--primary-color); }
+
+    .btn-outline {
+      border: 2px solid var(--primary-color);
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      background: transparent;
+      color: var(--primary-color);
+      transition: var(--transition);
+    }
+
+    .btn-outline:hover {
+      background: var(--primary-color);
+      color: white;
+    }
+
+    .dropdown { position: relative; }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: white;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+      border-radius: 5px;
+      min-width: 200px;
+    }
+
+    .dropdown:hover .dropdown-content { display: block; }
+    .dropdown-link { padding: 0.75rem 1rem; display: block; }
+    .dropdown-link:hover { background-color: #f3f4f6; }
+
+    .video-background {
+      position: relative;
+      height: auto;
+      overflow: hidden;
+    }
+
+    .video-background video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+
+    .video-overlay {
+      position: relative;
+      z-index: 1;
+      padding: 4rem 2rem;
+      color: white;
+      background: rgba(0, 0, 0, 0.6);
+      text-align: center;
+    }
+
+    .video-overlay h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .video-overlay p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: auto;
+      margin-bottom: 3rem;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 2rem;
+    }
+
+    .feature {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      color: white;
+      transition: var(--transition);
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      background-color: #101820;
+      color: white;
+      padding: 2rem 1rem;
+    }
+
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .footer-section {
+      flex: 1 1 300px;
+      margin: 1rem;
+    }
+
+    .footer-section h3 {
+      color: #f2aa4c;
+      margin-bottom: 10px;
+    }
+
+    .footer-section a {
+      color: #f2aa4c;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      font-size: 0.9rem;
+      padding-top: 1rem;
+      border-top: 1px solid #444;
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-brand">
+        <img src="C:\Users\Abujar\Desktop\index\ChatGPT Image Jun 6, 2025, 11_29_04 AM.png" class="logo-img" alt="Smart Tech Services Logo">
+      </a>
+      <nav class="nav-menu">
+        <div class="dropdown">
+          <a href="#" class="nav-link">Solutions</a>
+          <div class="dropdown-content">
+            <a href="samrttechTraning.html" class="dropdown-link">SmartTechServices Training</a>
+            <a href="smarttechInfra.html" class="dropdown-link">SmartTechServices Infra</a>
+            <a href="SmarttechInspection_Quality.html" class="dropdown-link">Inspection & Quality</a>
+            <a href="consultancy.html" class="dropdown-link">Consultancy</a>
+            <a href="MEP.html" class="dropdown-link">MEP</a>
+            <a href="FireSystem.html" class="dropdown-link">Fire System</a>
+            <a href="Enviro.html" class="dropdown-link">Enviro</a>
+          </div>
+        </div>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="book_consultaton.html" class="nav-link">Book Consultation</a>
+        <a href="contact.html" class="btn-outline">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="video-background">
+    <video autoplay loop muted playsinline>
+      <source src="C:\Users\Abujar\Desktop\index\The Power and Beauty of Construction Sites_ A Cinematic Reel.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="video-overlay">
+      <h1>SmartTech Inspection & Quality</h1>
+      <p>We ensure safety, precision, and compliance with every structure, with expert inspections and uncompromised quality control systems.</p>
+
+      <section class="section">
+        <h2>Inspection & Quality Services</h2>
+        <div class="features">
+          <div class="feature">
+            <h3>Structural Inspections</h3>
+            <p>In-depth checks of structural integrity, material strength, and compliance with design and safety codes.</p>
+          </div>
+          <div class="feature">
+            <h3>Third-Party Quality Audits</h3>
+            <p>Independent technical audits to ensure objective assessment and transparency in execution.</p>
+          </div>
+          <div class="feature">
+            <h3>Daily Site Quality Reporting</h3>
+            <p>Regular quality checklists, material inspection records, and contractor compliance reviews delivered digitally.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>Smart Tech Services delivers top-notch construction, infrastructure, and engineering solutions across India.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="samrttechTraning.html">Training</a></li>
+          <li><a href="consultancy.html">Consultancy</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>Email: stscontact@engineer.com</p>
+        <p>Phone: +91 8888384409</p>
+        <p>Address: Office no L07 Mangalmurti Complax Bhosari MIDC Pune</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 SmartTechServices | All Rights Reserved</p>
+    </div>
+  </footer>
+</body>
+</html>
